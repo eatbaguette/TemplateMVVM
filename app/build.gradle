@@ -26,16 +26,16 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.android.support:design:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 
     // Databinding
-    kapt 'com.android.databinding:compiler:3.0.1'
+    kapt 'com.android.databinding:compiler:3.1.0'
 
     // RxJava2
     implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
@@ -43,43 +43,43 @@ dependencies {
     implementation 'com.jakewharton.rxbinding2:rxbinding-kotlin:2.1.1'
 
     // RxLifecycle
-    compile 'com.trello:rxlifecycle:1.0'
-    compile 'com.trello:rxlifecycle-components:1.0'
-    compile 'com.trello:rxlifecycle-kotlin:1.0'
+    implementation 'com.trello:rxlifecycle:1.0'
+    implementation 'com.trello:rxlifecycle-components:1.0'
+    implementation 'com.trello:rxlifecycle-kotlin:1.0'
 
     // RxProperty
-    compile 'com.github.k-kagurazaka.rx-property-android:rx-property:4.0.0'
-    compile 'com.github.k-kagurazaka.rx-property-android:rx-property-kotlin:4.0.0'
+    implementation 'com.github.k-kagurazaka.rx-property-android:rx-property:4.0.0'
+    implementation 'com.github.k-kagurazaka.rx-property-android:rx-property-kotlin:4.0.0'
 
     // Realm
     apply plugin: 'realm-android'
 
     // Stetho
-    compile 'com.facebook.stetho:stetho:1.5.0'
-    compile 'com.facebook.stetho:stetho-okhttp3:1.5.0'
-    compile 'com.facebook.stetho:stetho-js-rhino:1.5.0'
-    compile 'com.uphyca:stetho_realm:2.0.0'
+    implementation 'com.facebook.stetho:stetho:1.5.0'
+    implementation 'com.facebook.stetho:stetho-okhttp3:1.5.0'
+    implementation 'com.facebook.stetho:stetho-js-rhino:1.5.0'
+    implementation 'com.uphyca:stetho_realm:2.0.0'
 
     // Dagger2
-    compile "com.google.dagger:dagger:2.14.1"
+    implementation "com.google.dagger:dagger:2.14.1"
     kapt "com.google.dagger:dagger-compiler:2.14.1"
 
     // Timber
-    compile 'com.jakewharton.timber:timber:4.6.0'
+    implementation 'com.jakewharton.timber:timber:4.6.0'
 
     // LreakCanary
-    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.4'
-    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
 
     //Moshi
     implementation "com.squareup.moshi:moshi:1.5.0"
     implementation "com.squareup.moshi:moshi-kotlin:1.5.0"
 
     // fliptable
-    compile 'com.jakewharton.fliptables:fliptables:1.0.2'
+    implementation 'com.jakewharton.fliptables:fliptables:1.0.2'
 
     // ThreetenABP
-    compile 'com.jakewharton.threetenabp:threetenabp:1.0.5'
+    implementation 'com.jakewharton.threetenabp:threetenabp:1.0.5'
 
     // Kotpref SharedPreferences
     implementation "com.chibatching.kotpref:kotpref:2.4.0"
@@ -87,7 +87,7 @@ dependencies {
 
 repositories {
     mavenCentral()
-    maven { url 'https://github.com/uPhyca/stetho-realm/raw/master/maven-repo'}
+    maven { url 'https://github.com/uPhyca/stetho-realm/raw/master/maven-repo' }
     maven { url 'https://jitpack.io' }
 }
 
